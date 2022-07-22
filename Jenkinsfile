@@ -8,8 +8,11 @@ pipeline{
         ansiColor("xtrem")
     }
     stages{
-        stage('Deploying'){
-            echo "Building the application"
+        stage('Building'){
+             steps{
+                  echo "Building the application"
+             }
+          
         }
         stage('Testing'){
             steps{
